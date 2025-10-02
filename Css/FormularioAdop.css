@@ -1,0 +1,441 @@
+/* Paletas de colores*/
+:root {
+    --ColorPrimario--: #3886b9;
+    --ColorSecundario--: #0f3670;
+    --color-3: #C70039;
+    --color-4: #9c87d4;
+    --color-5: #6b5817;
+    --color-Fondo--: #e9f5ee;
+    --color-boton--: rgb(55, 229, 252);
+}
+* {
+    font-family: cursive, arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fondo {
+    background: url("../Img/Fondo\ Registro.jpg") repeat center;
+    height: 100%;
+    position: relative;
+}
+.fondo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Negro con transparencia */
+}
+body {
+    font-family: cursive, arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: var(--ColorSecundario--);
+    font-size: 2rem;
+}
+form {
+    z-index: 100;
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 1.50rem white;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.30rem;
+}
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 1rem;
+    border: 0.15rem solid var(--ColorSecundario--);
+    border-radius: 1rem;
+}
+textarea {
+    resize: none;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.checkbox input {
+    width: auto;
+    margin-right: 1rem;
+}
+button {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background: var(--ColorSecundario--);
+    transition: background 0.3s;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--ColorPrimario--);
+}
+
+/* Responsive para celulares (max-width: 600px) */
+@media (max-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  header img.Logo {
+    width: 10rem;
+    height: auto;
+  }
+
+  header img:not(.Logo) {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+  }
+
+  /* Navegación: vertical y centrada */
+
+  nav ul.barra {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: block;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .formulario {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  .formulario h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .formulario label {
+    font-size: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .formulario textarea {
+    height: 6rem;
+  }
+
+  .formulario button {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-logo img {
+    width: 6rem;
+    height: auto;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para tablets (601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  header img.Logo {
+    width: 14rem;
+    height: auto;
+  }
+
+  header img:not(.Logo) {
+    width: 10rem;
+    height: auto;
+  }
+
+  /* Navegación: barra horizontal centrada */
+
+  nav ul.barra {
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+
+  .formulario {
+    width: 450px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  }
+
+  .formulario h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formulario label {
+    font-size: 1.1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .formulario textarea {
+    height: 7.5rem;
+  }
+
+  .formulario button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .footer-logo img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1.1rem;
+  }
+
+  .footer-contact p {
+    font-size: 1rem;
+  }
+
+  .social-icons a img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+  }
+
+  header img.Logo {
+    width: 16.5rem;
+    height: 9.5rem;
+  }
+
+  header img:not(.Logo) {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* Navegación */
+
+  nav ul.barra {
+    justify-content: end;
+    gap: 1rem;
+    padding: 0 3rem;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 20rem;
+    margin-top: -0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+  }
+
+  .formulario {
+    width: 450px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px black;
+  }
+
+  .formulario h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formulario label {
+    font-size: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .formulario textarea {
+    height: 7.5rem;
+  }
+
+  .formulario button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Footer */
+  
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-logo img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+}

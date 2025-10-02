@@ -1,0 +1,744 @@
+/* Paletas de colores*/
+:root {
+  --ColorPrimario--: #3886b9;
+  --ColorSecundario--: #0f3670;
+  --color-3: #C70039;
+  --color-4: #9c87d4;
+  --color-5: #6b5817;
+  --color-Fondo--: #e9f5ee;
+  --color-boton--: rgb(55, 229, 252);
+}
+
+* {
+  font-family: cursive, arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-Fondo--);
+
+  position: relative;
+  /* background-size: cover; */
+}
+
+/* Nav y Header*/
+
+header {
+  background-color: var(--ColorPrimario--);
+  font-size: 2rem;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+header img {
+  width: 12rem;
+  height: 12rem;
+}
+
+header .Logo {
+  background-color: white;
+  border-radius: 5rem;
+  padding: 0.30rem;
+  box-shadow: 0 0 0.40rem white;
+  transition: transform 0.3s ease;
+  width: 16.5rem;
+  height: 9.5rem;
+}
+
+header .Logo:hover {
+  transform: scale(01.010);
+}
+
+nav {
+  position: sticky;
+  z-index: 900;
+  top: 0;
+  background-color: var(--ColorSecundario--);
+  padding: 1.5rem;
+}
+
+.link a {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.40rem white;
+  transition: background-color 1s ease;
+  color: black;
+  font-size: 1rem;
+}
+
+.link1 img {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.40rem;
+  box-shadow: 0 0 0.40rem white;
+  transition: transform 0.3s, filter 0.3s ease;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: 20rem;
+  margin-top: -0.60rem;
+}
+
+.link1 img:hover {
+  transform: scale(1.2);
+}
+
+.link a:hover {
+  background-color: var(--color-boton--);
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.40rem black;
+  color: black;
+  font-size: 1rem;
+  transform: scale(01.010);
+}
+
+.barra {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  gap: 1rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.intro h2 {
+  color: var(--ColorSecundario--);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+.info-box {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  margin-top: 2rem;
+}
+
+.info-box h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--ColorSecundario--);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.info-box .accounts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.account {
+  background: linear-gradient(145deg, #fdfdfd, #f5f8fb);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.account:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.account h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--ColorPrimario--);
+}
+
+.titulo4 {
+  text-align: center;
+}
+
+.account p {
+  font-size: 1rem;
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+.account code {
+  background: #e9f3ff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--ColorSecundario--);
+}
+
+.small {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  box-shadow: 0 0 10px black;
+  border-radius: 4px;
+  margin: 2rem;
+}
+
+.formulario {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.donar-form {
+  background: white;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.donar-form:hover {
+  transform: scale(1.01);
+}
+
+.donar-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: var(--ColorSecundario--);
+}
+
+.donar-form input,
+.donar-form select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donar-form input:focus,
+.donar-form select:focus {
+  border-color: var(--ColorPrimario--);
+  box-shadow: 0 0 6px rgba(56, 134, 185, 0.4);
+  outline: none;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  background-color: var(--ColorPrimario--);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--color-3);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background: var(--ColorPrimario--);
+  color: #fff;
+  padding: 2.5rem 1.5rem 1.5rem;
+  font-family: cursive, arial;
+  margin-top: 1rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.footer-logo {
+  justify-content: center;
+  align-content: center;
+
+}
+
+.footer-logo img {
+  margin: 1.5rem;
+  width: 8rem;
+  height: 8rem;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 0.50rem;
+  color: var(--ColorSecundario--);
+  font-size: 1.1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 5%;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: black;
+}
+
+.footer-contact p {
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform 0.3s, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 0.10rem solid white;
+  padding-top: 0.50rem;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#Terminos {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.40rem white;
+  transition: background-color 1s ease;
+  color: black;
+  font-size: 1.rem;
+}
+
+#Terminos:hover {
+  background-color: var(--color-boton--);
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.40rem black;
+  color: black;
+  font-size: 1.rem;
+  transform: scale(01.010);
+}
+
+.Icons {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.40rem white;
+  transition: background-color 1s ease;
+  color: black;
+  font-size: 1.50rem;
+}
+
+/* Responsive para celulares (max-width: 600px) */
+@media (max-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  header img.Logo {
+    width: 10rem;
+    height: auto;
+  }
+
+  header img:not(.Logo) {
+    width: 100%;
+    max-width: 12rem;
+    height: auto;
+  }
+
+  /* Navegación: vertical y centrada */
+
+  nav ul.barra {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  nav ul li {
+    margin-top: 1rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: block;
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .formulario {
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .formulario h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .formulario label {
+    font-size: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .formulario textarea {
+    height: 6rem;
+  }
+
+  .formulario button {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .footer-logo img {
+    width: 6rem;
+    height: auto;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para tablets (601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+  }
+
+  header img.Logo {
+    width: 14rem;
+    height: auto;
+  }
+
+  header img:not(.Logo) {
+    width: 10rem;
+    height: auto;
+  }
+
+  /* Navegación: barra horizontal centrada */
+
+  nav ul.barra {
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 0;
+    margin-top: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+
+  .formulario {
+    width: 450px;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  }
+
+  .formulario h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formulario label {
+    font-size: 1.1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .formulario textarea {
+    height: 7.5rem;
+  }
+
+  .formulario button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+
+  .footer-logo img {
+    width: 7rem;
+    height: auto;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.3rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1.1rem;
+  }
+
+  .footer-contact p {
+    font-size: 1rem;
+  }
+
+  .social-icons a img {
+    width: 1.4rem;
+    height: 1.4rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+
+  header {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
+  }
+
+  header img.Logo {
+    width: 16.5rem;
+    height: 9.5rem;
+  }
+
+  header img:not(.Logo) {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  /* Navegación */
+
+  nav ul.barra {
+    justify-content: end;
+    gap: 1rem;
+    padding: 0 3rem;
+  }
+
+  nav ul.barra li.link1 img {
+    margin-left: 20rem;
+    margin-top: -0.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Sección Contactanos */
+
+  .Contactanos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+  }
+
+  .formulario {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px black;
+  }
+
+  .formulario h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .formulario label {
+    font-size: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .formulario textarea {
+    height: 7.5rem;
+  }
+
+  .formulario button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 75rem;
+    margin: auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .footer-logo img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-social h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-links ul li a {
+    font-size: 1rem;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .social-icons a img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .footer-bottom p {
+    font-size: 1rem;
+  }
+}

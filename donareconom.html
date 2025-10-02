@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apoyo Económico - Huellitas Del Corazón</title>
+  <link rel="shortcut icon" href="Img/pata.png" type="image/x-icon">
+  <link rel="stylesheet" href="Css/donaeconomico.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="banner">
+    <img class="Logo" src="Img/Logo.1.png" alt="Logo Huellitas">
+    <h1>Apoyo Económico</h1>
+    <img src="Img/ImgHogar.png" alt="Imagen Hogar">
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <ul class="barra">
+      <li class="link"><a href="Inicio.html">Hogar</a></li>
+      <li class="link"><a href="Bienestar.html">Bienestar</a></li>
+      <li class="link"><a href="Adopcion.html">Adoptame</a></li>
+      <li class="link"><a href="Locales.html">Consultas</a></li>
+      <li class="link"><a href="Donaciones.html">Donaciones</a></li>
+      <li class="link"><a href="Contactanos.html">Contactanos</a></li>
+      <li class="link1"><a href="Registro.html"><img src="Img/nuevo-usuario.png" alt="Registro"></a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="donar">
+  <section class="intro">
+    <h2>Apoyo económico — tu ayuda financiera</h2>
+    <p>
+      Tu aporte monetario nos ayuda a cubrir gastos médicos, esterilizaciones y rescates.
+    </p>
+  </section>
+
+  <!-- Opciones para donar -->
+  <section class="info-box">
+    <h3>Opciones para donar</h3>
+
+    <div class="accounts-grid">
+      <div class="account">
+        <h4>Transferencia Bancaria</h4>
+        <p><strong>Banco:</strong> Banco de Bogotá</p>
+        <p><strong>Tipo:</strong> Cuenta de ahorros</p>
+        <p><strong>Cuenta:</strong> <code>1234567890</code></p>
+        <p><strong>A nombre de:</strong> Fundación Huellitas del Corazón</p>
+        <p><strong>NIT:</strong> 900123456-7</p>
+      </div>
+    
+      <div class="account">
+        <h4>Pagos móviles</h4>
+        <p><strong>Nequi:</strong> <code>3201234567</code></p>
+        <p><strong>Daviplata:</strong> <code>3101234567</code></p>
+        <p>(Nombre: Huellitas del Corazón)</p>
+      </div>
+    </div>
+
+    <p class="small">
+      <strong>Instrucciones:</strong> Envía el comprobante a
+      <strong>Huellitas_Del_Corazon@example.com</strong> o WhatsApp
+      <strong>+57 312 8939 588</strong>.
+    </p>
+  </section>
+  
+    <section  class="formulario">
+      <form action="EnvioDona.html" class="donar-form">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+
+        <label for="monto">Monto de donación (COP):</label>
+        <input type="number" id="monto" name="monto" placeholder="Ejemplo: 50000" required>
+
+        <label for="metodo">Método de pago:</label>
+        <select id="metodo" name="metodo" required>
+          <option value="">Selecciona un método</option>
+          <option value="transferencia">Transferencia Bancaria</option>
+          <option value="nequi">Nequi</option>
+          <option value="daviplata">Daviplata</option>
+
+        </select>
+
+        <label for="comprobante">¿Deseas que emitamos comprobante / recibo?</label>
+        <select id="comprobante" name="comprobante" required>
+          <option value="no">No</option>
+          <option value="si">Sí, enviar comprobante</option>
+        </select>
+
+        <p class="nota-pequena">
+          <strong>Importante:</strong> Después de enviar el formulario, realiza la transferencia y adjunta el comprobante al
+          correo o WhatsApp para validar y registrar tu donación.
+        </p>
+
+        <button type="submit" class="btn">Enviar donación</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a id="Terminos" href="TerminosYCondiciones.html">Términos y condiciones</a>
+        <br>
+        <img src="Img/contacto.png" alt="Contacto">
+      </div>
+
+      <div class="footer-links">
+        <h3>Páginas informativas</h3>
+        <ul>
+          <li><a href="https://petia.es/cuidados-perros/" target="_blank">Petia</a></li>
+          <li><a href="https://purina.com.co/purina/mi-mascota?specie_filter%5B2%5D=2" target="_blank">Purina</a></li>
+          <li><a href="https://madridsalud.es/cuidados-basicos-perros-gatos/" target="_blank">Madrid Salud</a></li>
+          <li><a href="https://clinicaveterinarium.es" target="_blank">Veterinarium</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contactos</h3>
+        <p>Email: Huellitas_Del_Corazon@example.com</p>
+        <p>Tel: +57 123 456 7891</p>
+        <p>Dirección: Colombia - Medellín</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a class="Icons" href="https://www.facebook.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+          <a class="Icons" href="https://x.com/?lang=es" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+          <a class="Icons" href="https://co.linkedin.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a class="Icons" href="https://www.instagram.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Derechos Reservados por Luis.Zs y Adrian.V</p>
+    </div>
+  </footer>
+</body>
+</html>

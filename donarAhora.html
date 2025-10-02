@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donar Alimentos - Huellitas Del Corazón</title>
+  <link rel="shortcut icon" href="Img/pata.png" type="image/x-icon">
+  <link rel="stylesheet" href="Css/DonarAhora.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="banner">
+    <img class="Logo" src="Img/Logo.1.png" alt="Logo Huellitas">
+    <h1>Donar Alimentos</h1>
+    <img src="Img/ImgHogar.png" alt="Imagen Hogar">
+  </header>
+
+  <!-- NAV -->
+  <nav>
+    <ul class="barra">
+      <li class="link"><a href="Inicio.html">Hogar</a></li>
+      <li class="link"><a href="Bienestar.html">Bienestar</a></li>
+      <li class="link"><a href="Adopcion.html">Adoptame</a></li>
+      <li class="link"><a href="Locales.html">Consultas</a></li>
+      <li class="link"><a href="Donaciones.html">Donaciones</a></li>
+      <li class="link"><a href="Contactanos.html">Contactanos</a></li>
+      <li class="link1"><a href="Registro.html"><img src="Img/nuevo-usuario.png" alt="Registro"></a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO -->
+  <main class="donar">
+    <section class="intro">
+      <h2>Alimenta una vida — Dona alimentos</h2>
+      <p>
+        Con tu donación de alimentos, nuestros rescatados tendrán una comida asegurada cada día.
+      </p>
+    </section>
+
+    <section class="info-box">
+      <h3>¿Dónde entregar?</h3>
+      <p class="small">
+        Huellitas del corazón — Dirección: <strong>Cra 45 #12-34, Barrio El Poblado, Medellín</strong>.
+        Horario de recepción: <strong>Lun - Sáb: 9:00AM - 7:00PM</strong>.
+      </p>
+
+      <h4 class="titulo4">¿No puedes acercarte?</h4>
+      <p class="small">
+        Podemos coordinar recolección en Medellín (según ruta y disponibilidad). Envía un mensaje con tu dirección al
+        WhatsApp <strong>+57 312 8939 588</strong> o escribe a <strong>Huellitas_Del_Corazon@example.com</strong>. Indica
+        tipo y cantidad aproximada para poder programar la ruta.
+      </p>
+    </section>
+    <section class="formulario">
+      <form action="EnvioDona.html" class="donar-form">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@email.com" required>
+
+        <label for="tipo">Tipo de alimento:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecciona una opción</option>
+          <option value="concentrado">Concentrado (seco)</option>
+          <option value="húmedo">Comida húmeda (latas/sobres)</option>
+          <option value="snacks">Snacks / premios</option>
+        </select>
+
+        <label for="cantidad">Cantidad aproximada (kg o unidades):</label>
+        <input type="text" id="cantidad" name="cantidad" placeholder="Ejemplo: 10 kg / 20 latas" required>
+
+        <label for="recoger">¿Necesitas que recojamos? (Medellín)</label>
+        <select id="recoger" name="recoger" required>
+          <option value="no">No, llevaré la donación</option>
+          <option value="si">Sí, coordinar recolección</option>
+        </select>
+
+        <p class="nota-pequena">
+          <strong>Nota:</strong> Si seleccionas recolección, te contactaremos para confirmar día y hora.
+        </p>
+
+        <button type="submit" class="btn">Enviar solicitud de donación</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a id="Terminos" href="TerminosYCondiciones.html">Términos y condiciones</a>
+        <br>
+        <img src="Img/contacto.png" alt="Contacto">
+      </div>
+
+      <div class="footer-links">
+        <h3>Páginas informativas</h3>
+        <ul>
+          <li><a href="https://petia.es/cuidados-perros/" target="_blank">Petia</a></li>
+          <li><a href="https://purina.com.co/purina/mi-mascota?specie_filter%5B2%5D=2" target="_blank">Purina</a></li>
+          <li><a href="https://madridsalud.es/cuidados-basicos-para-los-animales-de-compania-perros-y-gatos/" target="_blank">Madrid Salud</a></li>
+          <li><a href="https://clinicaveterinarium.es/necesidades-basicas-perros-gatos/" target="_blank">Veterinarium</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contactos</h3>
+        <p>Email: Huellitas_Del_Corazon@example.com</p>
+        <p>Tel: +57 123 456 7891</p>
+        <p>Dirección: Colombia - Medellín</p>
+      </div>
+
+      <div class="footer-social">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a class="Icons" href="https://www.facebook.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook"></a>
+          <a class="Icons" href="https://x.com/?lang=es" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter"></a>
+          <a class="Icons" href="https://co.linkedin.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a class="Icons" href="https://www.instagram.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; Derechos Reservados por Luis.Zs y Adrian.V</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+/* Paletas de colores*/
+:root {
+    --ColorPrimario--: #3886b9;
+    --ColorSecundario--: #0f3670;
+    --color-3: #C70039;
+    --color-4: #9c87d4;
+    --color-5: #6b5817;
+    --color-Fondo--: #e9f5ee;
+    --color-boton--: rgb(55, 229, 252);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d1117;
+    font-family: cursive;
+    color: #ffffff;
+}
+
+.loader {
+    text-align: center;
+}
+
+.loader h1 {
+    font-family: cursive;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+a {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--ColorSecundario--);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--ColorPrimario--);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/FormularioAdop.css">
+    <link rel="shortcut icon" href="Img/pata.png" type="image/x-icon">
+    <title>Registro</title>
+</head>
+
+<body class="fondo">
+
+    <form action="Envio.html">
+
+        <h1>Cuestionario de Adopción de Mascotas</h1>
+
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" placeholder="+18" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="CrA-Cl-23Avenida" required>
+
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+57 3014659415" required>
+
+        <label for="vivienda">¿Qué tipo de vivienda tienes?</label>
+        <select id="vivienda" name="vivienda" required>
+            <option value="">Selecciona una opción</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="finca">Finca</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="espacio">¿Tienes espacio adecuado para una mascota?</label>
+        <select id="espacio" name="espacio" required>
+            <option value="">Selecciona una opción</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="tiempo">¿Cuánto tiempo puedes dedicarle al día a tu mascota?</label>
+        <input type="text" id="tiempo" name="tiempo" placeholder="Ej: 2 horas diarias" required>
+
+        <label for="experiencia">¿Has tenido mascotas antes? ¿Cuáles?</label>
+        <textarea id="experiencia" name="experiencia" rows="3" placeholder="Escribe tus experiencias"></textarea>
+
+        <label for="motivo">¿Por qué deseas adoptar una mascota?</label>
+        <textarea id="motivo" name="motivo" rows="3" placeholder="Escribe tu motivo" required></textarea>
+
+        <label for="responsabilidad">¿Quién será el principal responsable del cuidado de la mascota?</label>
+        <input type="text" id="responsabilidad" name="responsabilidad" placeholder="Escribe el dueño" required>
+
+        <label for="gastos">¿Estás dispuesto a asumir los gastos de alimentación, salud y bienestar?</label>
+        <select id="gastos" name="gastos" required>
+            <option value="">--Selecciona una opción--</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <div class="checkbox">
+            <input type="checkbox" id="compromiso" name="compromiso" required>
+            <label for="compromiso">Me comprometo a cuidar, proteger y brindar un hogar responsable y amoroso a la
+                mascota adoptada.</label>
+        </div>
+
+        <button type="submit">Enviar cuestionario</button>
+    </form>
+</body>
+</html>
